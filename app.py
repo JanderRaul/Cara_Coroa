@@ -6,7 +6,6 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, RadioField
 from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
-import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 db = SQLAlchemy(app)
