@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia RSA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="form singup">
+            <header>Cara ou Coroa</header>
+            <form action="jogar" method="POST">
+                <div class="field input">
+                    <label>Sejá bem vindo Jogador!</label>
+                    <label>Para começar é preciso ter um cadastro..</label>
+                    <label>Se voçê já possui é só clicar em logar</label><br>
+                    <label>Você está pronto??</label>
+                </div>
+            </form>
+            <a href="{{ url_for('login') }}">
+                <div class="botao">
+                    Login
+                </div>
+            </a>
+            <a href="{{ url_for('register') }}">
+                <div class="botao">
+                    Registrar
+                </div>
+            </a>       
+        </section>
+    </div>
+</body>
+</html>

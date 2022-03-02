@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2e2c2c;
+}
+.wrapper{
+    background: #fff;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+.form{
+    padding: 25px 30px;
+}
+.form header{
+    font-size: 25px;
+    font-weight: 600;
+}
+.form form{
+    margin: 20px 0;
+}
+.form form .field{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form form .field label{
+    margin-bottom: 2px;
+}
+.form form .button input{
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form form .button input:hover{
+    background: #61bd8c;
+}
+.cab{
+    position: relative;
+    display: flex;
+}
+.cab .menu{
+    position: absolute;
+    display: flex;
+    right: 0;
+    height: 100%;
+}
+.cab .menu a{
+    text-decoration: none;
+    color: #333;
+}
+.cab .menu a i{
+    height: 100%;
+    width: 32px;
+    border-radius: 8px;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.cab .menu a i:hover{
+    background-color: #ccc;
+}
+.jogo{
+    margin-top: 5px;                        
+    border-top: 1px solid #e6e6e6;
+    padding-top: 10px;
+}
+.radio ul{
+    position: relative;
+    width: 100%;
+}
+.radio ul li{
+    list-style-type: none;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+.radio ul label{            
+    height: 15px;           
+    padding: 8px;
+    margin-top: 8px;
+    color: #fff;
+}
+.image{
+    position: relative;
+    background-color: #61bd8c;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+.image img{
+    height: 150px;
+    padding-top: 5px;
+}
+.result{
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="form singup">
+            <header>Seus resultados</header>
+            <canvas id="myChart" class="char"></canvas>       
+            <a href="{{ url_for('dashboard') }}">
+                <div class="botao">
+                    Voltar
+                </div>
+            </a>       
+        </section>
+    </div>
+    <script>
+        var xValues = ['Vitorias', 'Derrotas'];
+        var yValues = {{(values)}} ;
+        var barColors = [
+          "#3ab907",
+          "#1216ec",
+        ];
+        
+        new Chart("myChart", {
+          type: "pie",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+        });
+    </script>
+</body>
+</html>

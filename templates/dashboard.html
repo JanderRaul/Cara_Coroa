@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia RSA</title>
+    <script src="https://kit.fontawesome.com/60fc503006.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='dashboard.css')}}">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="form">
+            <div class="cab">
+                <header>{{(nome)}}</header>
+                <div class="menu">
+                    <a href="{{url_for('resultados')}}"><i class="fa-solid fa-chart-pie"></i></a>
+                    <a href="{{url_for('ranking')}}"><i class="fa-solid fa-chart-area"></i></a>
+                    <a href="{{url_for('logout')}}"><i class="fa-solid fa-circle-xmark"></i></a>
+                </div>                  
+            </div>
+            <div class="jogo">
+                <div class="field">
+                    <label>Escolha uma das opções...</label>
+                    <form action="" method="POST">
+                        {{ form.hidden_tag() }}
+                        <div class="field radio">
+                            {{ form.jogar }}
+                        </div>                        
+                        <div class="field button">                    
+                            {{ form.submit }}
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="image">
+                <img src="{{(moeda)}}" alt="moeda">
+            </div>
+            <div class="result">
+                <label>{{(resultado)}}</label>
+            </div>            
+                                          
+        </section>
+    </div>
+</body>
+</html>
